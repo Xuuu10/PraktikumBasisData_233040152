@@ -1,3 +1,6 @@
-SELECT nama_mata_kuliah
-from jadwal_mata_kuliah
-where kode_mata_kuliah in ('TI101','SI201','TS301'); 
+select *
+from mahasiswa
+where mahasiswa_id in (
+		select mahasiswa_id
+		from dpp_mahasiswa
+		where status_pembayaran = 'lunas');

@@ -1,4 +1,3 @@
-select *
+select count(*) as jumlah_total_mahasiswa_informatika
 from mahasiswa
-where jurusan = 'teknik informatika' 
-and alamat like '%JL.Merdeka&';
+where jurusan = 'teknik informatika';

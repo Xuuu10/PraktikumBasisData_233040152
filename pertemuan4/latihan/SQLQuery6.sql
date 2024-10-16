@@ -1,3 +1,3 @@
-select top 5 *
-from dpp_mahasiswa
-order by jumlah_pembayaran desc;
+select count(*) nama_mata_kuliah
+from jadwal_mata_kuliah
+where hari = 'senin';

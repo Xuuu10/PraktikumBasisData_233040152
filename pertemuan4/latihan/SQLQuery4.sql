@@ -1,3 +1,3 @@
-select count(*) as jumlah_total_mahasiswa_informatika
-from mahasiswa
-where jurusan = 'teknik informatika';
+select top 5 *
+from dpp_mahasiswa
+order by jumlah_pembayaran desc;
